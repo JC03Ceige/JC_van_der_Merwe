@@ -1,393 +1,473 @@
 /* Declare root elements for easier CSS management */
 :root {
-    /* Filter glow for static icon */
-    --unicornGlow: drop-shadow(0 0 3px rgba(225, 228, 255, 0.836)) drop-shadow(0 0 4px rgb(219, 223, 255)) drop-shadow(0 0 7px rgba(241, 194, 253, 0.753)) drop-shadow(0 0 15px rgba(212, 172, 212, 0.678)) drop-shadow(0 0 17px rgb(35, 1, 88)) drop-shadow(0 0 28px rgb(51, 2, 107)) drop-shadow(0 0 38px rgba(56, 21, 121, 0.966)) drop-shadow(0 0 48px rgba(93, 42, 141, 0.699)) drop-shadow(0 0 64px rgba(91, 36, 143, 0.877)) drop-shadow(0 0 81px rgba(137, 74, 219, 0.384)) drop-shadow(0 0 102px rgba(119, 88, 148, 0.699));
+  /* Filter glow for static icon */
+  --unicornGlow: drop-shadow(0 0 3px rgba(225, 228, 255, 0.836))
+    drop-shadow(0 0 4px rgb(219, 223, 255))
+    drop-shadow(0 0 7px rgba(241, 194, 253, 0.753))
+    drop-shadow(0 0 15px rgba(212, 172, 212, 0.678))
+    drop-shadow(0 0 17px rgb(35, 1, 88)) drop-shadow(0 0 28px rgb(51, 2, 107))
+    drop-shadow(0 0 38px rgba(56, 21, 121, 0.966))
+    drop-shadow(0 0 48px rgba(93, 42, 141, 0.699))
+    drop-shadow(0 0 64px rgba(91, 36, 143, 0.877))
+    drop-shadow(0 0 81px rgba(137, 74, 219, 0.384))
+    drop-shadow(0 0 102px rgba(119, 88, 148, 0.699));
 
-    /* Filter glow for hover animation */
-    --unicornHover: drop-shadow(0 0 4px rgb(217, 255, 249)) drop-shadow(0 0 11px rgb(217, 255, 249)) drop-shadow(0 0 29px rgb(217, 255, 249)) drop-shadow(0 0 40px rgb(42, 0, 109)) drop-shadow(0 0 80px rgb(73, 0, 156)) drop-shadow(0 0 90px rgba(81, 30, 177, 0.897)) drop-shadow(0 0 100px rgba(104, 41, 163, 0.699)) drop-shadow(0 0 150px rgba(110, 23, 223, 0.384));
+  /* Filter glow for hover animation */
+  --unicornHover: drop-shadow(0 0 4px rgb(217, 255, 249))
+    drop-shadow(0 0 11px rgb(217, 255, 249))
+    drop-shadow(0 0 29px rgb(217, 255, 249))
+    drop-shadow(0 0 40px rgb(42, 0, 109)) drop-shadow(0 0 80px rgb(73, 0, 156))
+    drop-shadow(0 0 90px rgba(81, 30, 177, 0.897))
+    drop-shadow(0 0 100px rgba(104, 41, 163, 0.699))
+    drop-shadow(0 0 150px rgba(110, 23, 223, 0.384));
 
-    /* Filter glow for static icon */
-    --cloudGlow: drop-shadow(0 0 5px rgb(200, 253, 255)) drop-shadow(0 0 9px rgb(255, 255, 255)) drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #00fafa) drop-shadow(0 0 28px #6af8fdd0) drop-shadow(0 0 38px #b6f0ff91) drop-shadow(0 0 52px #0098a391) drop-shadow(0 0 71px #b6faff91) drop-shadow(0 0 91px #016c7a91);
+  /* Filter glow for static icon */
+  --cloudGlow: drop-shadow(0 0 5px rgb(200, 253, 255))
+    drop-shadow(0 0 9px rgb(255, 255, 255)) drop-shadow(0 0 12px #fff)
+    drop-shadow(0 0 17px #00fafa) drop-shadow(0 0 28px #6af8fdd0)
+    drop-shadow(0 0 38px #b6f0ff91) drop-shadow(0 0 52px #0098a391)
+    drop-shadow(0 0 71px #b6faff91) drop-shadow(0 0 91px #016c7a91);
 
-    /* Filter glow for hover animation */
-    --cloudHover: drop-shadow(0 0 7px rgb(200, 253, 255)) drop-shadow(0 0 10px rgb(255, 255, 255)) drop-shadow(0 0 21px #fff) drop-shadow(0 0 35px #00fafa) drop-shadow(0 0 52px #6af8fdd0) drop-shadow(0 0 72px #b6f0ff91) drop-shadow(0 0 92px #0083a391) drop-shadow(0 0 101px #b6f0ff91) drop-shadow(0 0 151px #016c7a91);
+  /* Filter glow for hover animation */
+  --cloudHover: drop-shadow(0 0 7px rgb(200, 253, 255))
+    drop-shadow(0 0 10px rgb(255, 255, 255)) drop-shadow(0 0 21px #fff)
+    drop-shadow(0 0 35px #00fafa) drop-shadow(0 0 52px #6af8fdd0)
+    drop-shadow(0 0 72px #b6f0ff91) drop-shadow(0 0 92px #0083a391)
+    drop-shadow(0 0 101px #b6f0ff91) drop-shadow(0 0 151px #016c7a91);
 
-    /* Filter glow for static icon */
-    --rnbwGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff) drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #5f009e) drop-shadow(0 0 28px #5f009e) drop-shadow(0 0 38px #772fa7) drop-shadow(0 0 52px #ad74c4d5) drop-shadow(0 0 71px #ba5ac7a4) drop-shadow(0 0 91px #ba5ac7a4);
+  /* Filter glow for static icon */
+  --rnbwGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff)
+    drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #5f009e)
+    drop-shadow(0 0 28px #5f009e) drop-shadow(0 0 38px #772fa7)
+    drop-shadow(0 0 52px #ad74c4d5) drop-shadow(0 0 71px #ba5ac7a4)
+    drop-shadow(0 0 91px #ba5ac7a4);
 
-    /* Filter glow for hover animation */
-    --rnbwHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #5f009e) drop-shadow(0 0 52px #5f009e) drop-shadow(0 0 72px #772fa7) drop-shadow(0 0 92px #ad74c4d5) drop-shadow(0 0 101px #ba5ac7a4) drop-shadow(0 0 151px #ba5ac7a4);
+  /* Filter glow for hover animation */
+  --rnbwHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #5f009e)
+    drop-shadow(0 0 52px #5f009e) drop-shadow(0 0 72px #772fa7)
+    drop-shadow(0 0 92px #ad74c4d5) drop-shadow(0 0 101px #ba5ac7a4)
+    drop-shadow(0 0 151px #ba5ac7a4);
 
-    /* Filter glow for static icon */
-    --cherryGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff) drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #ff009d) drop-shadow(0 0 28px #ff009d) drop-shadow(0 0 38px #b93662ea) drop-shadow(0 0 52px #9c0041be) drop-shadow(0 0 71px #942d58a1) drop-shadow(0 0 91px #942d58a1);
+  /* Filter glow for static icon */
+  --cherryGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff)
+    drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #ff009d)
+    drop-shadow(0 0 28px #ff009d) drop-shadow(0 0 38px #b93662ea)
+    drop-shadow(0 0 52px #9c0041be) drop-shadow(0 0 71px #942d58a1)
+    drop-shadow(0 0 91px #942d58a1);
 
-    /* Filter glow for hover animation */
-    --cherryHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #ff009d) drop-shadow(0 0 52px #ff009d) drop-shadow(0 0 72px #b93662ea) drop-shadow(0 0 92px #9c0041be) drop-shadow(0 0 101px #942d58a1) drop-shadow(0 0 151px #942d58a1);
+  /* Filter glow for hover animation */
+  --cherryHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #ff009d)
+    drop-shadow(0 0 52px #ff009d) drop-shadow(0 0 72px #b93662ea)
+    drop-shadow(0 0 92px #9c0041be) drop-shadow(0 0 101px #942d58a1)
+    drop-shadow(0 0 151px #942d58a1);
 
-    /* Filter glow for static icon */
-    --cloverGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff) drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #17c500) drop-shadow(0 0 28px #42f02bd0) drop-shadow(0 0 38px #9eee93e0) drop-shadow(0 0 52px #c0f8b9e0) drop-shadow(0 0 71px #dfffdbe0) drop-shadow(0 0 91px #dfffdbe0);
+  /* Filter glow for static icon */
+  --cloverGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff)
+    drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #17c500)
+    drop-shadow(0 0 28px #42f02bd0) drop-shadow(0 0 38px #9eee93e0)
+    drop-shadow(0 0 52px #c0f8b9e0) drop-shadow(0 0 71px #dfffdbe0)
+    drop-shadow(0 0 91px #dfffdbe0);
 
-    /* Filter glow for hover animation */
-    --cloverHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #17c500) drop-shadow(0 0 52px #42f02bd0) drop-shadow(0 0 72px #9eee93e0) drop-shadow(0 0 92px #c0f8b9e0) drop-shadow(0 0 101px #dfffdbe0) drop-shadow(0 0 151px #dfffdbe0);
+  /* Filter glow for hover animation */
+  --cloverHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #17c500)
+    drop-shadow(0 0 52px #42f02bd0) drop-shadow(0 0 72px #9eee93e0)
+    drop-shadow(0 0 92px #c0f8b9e0) drop-shadow(0 0 101px #dfffdbe0)
+    drop-shadow(0 0 151px #dfffdbe0);
 
-    /* Filter glow for static icon */
-    --lghtnGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff) drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #e5ff00) drop-shadow(0 0 28px #e5ff00) drop-shadow(0 0 38px #ebf870) drop-shadow(0 0 52px #ebf870) drop-shadow(0 0 71px #dfeea9) drop-shadow(0 0 91px #dfeea9);
+  /* Filter glow for static icon */
+  --lghtnGlow: drop-shadow(0 0 5px #fff) drop-shadow(0 0 9px #fff)
+    drop-shadow(0 0 12px #fff) drop-shadow(0 0 17px #e5ff00)
+    drop-shadow(0 0 28px #e5ff00) drop-shadow(0 0 38px #ebf870)
+    drop-shadow(0 0 52px #ebf870) drop-shadow(0 0 71px #dfeea9)
+    drop-shadow(0 0 91px #dfeea9);
 
-    /* Filter glow for hover animation */
-    --lghtnHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #e5ff00) drop-shadow(0 0 52px #e5ff00) drop-shadow(0 0 72px #ebf870) drop-shadow(0 0 92px #ebf870) drop-shadow(0 0 101px #dfeea9) drop-shadow(0 0 151px #dfeea9);
+  /* Filter glow for hover animation */
+  --lghtnHover: drop-shadow(0 0 7px #fff) drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 21px #fff) drop-shadow(0 0 32px #e5ff00)
+    drop-shadow(0 0 52px #e5ff00) drop-shadow(0 0 72px #ebf870)
+    drop-shadow(0 0 92px #ebf870) drop-shadow(0 0 101px #dfeea9)
+    drop-shadow(0 0 151px #dfeea9);
 }
 
 /* Reset padding and margins for elements on the page */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Styling 'content behavior' for body and container */
 body {
-    max-width: 100%;
-    overflow-x: wrap;
+  max-width: 100%;
+  overflow-x: wrap;
 }
 
 .container {
-    max-width: 95%;
-    padding: 5rem;
+  max-width: 95%;
+  padding: 5rem;
 }
 
 /* Styling main heading and adding flicker animation */
 h1 {
-    text-align: center;
-    font-family: 'Megrim', cursive;
-    font-size: 5em !important;
-    font-weight: 600;
-    letter-spacing: 1rem;
-    animation: flicker 1.5s infinite alternate;
-    color: rgb(249, 255, 254);
-    text-shadow: 0 0 3px 2px rgb(0, 177, 150);
+  text-align: center;
+  font-family: "Megrim", cursive;
+  font-size: 5em !important;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  animation: flicker 1.5s infinite alternate;
+  color: rgb(249, 255, 254);
+  text-shadow: 0 0 3px 2px rgb(0, 177, 150);
 }
 
 /* Flicker animation for main heading */
 @keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px rgb(217, 255, 249), 0 0 11px rgb(217, 255, 249),
+      0 0 25px rgb(217, 255, 249), 0 0 40px rgb(0, 112, 84),
+      0 0 80px rgb(0, 156, 117), 0 0 90px rgb(0, 196, 163),
+      0 0 100px rgb(0, 216, 180), 0 0 150px rgb(0, 216, 180);
+  }
 
-    0%,
-    18%,
-    22%,
-    25%,
-    53%,
-    57%,
-    100% {
-        text-shadow:
-            0 0 4px rgb(217, 255, 249),
-            0 0 11px rgb(217, 255, 249),
-            0 0 25px rgb(217, 255, 249),
-            0 0 40px rgb(0, 112, 84),
-            0 0 80px rgb(0, 156, 117),
-            0 0 90px rgb(0, 196, 163),
-            0 0 100px rgb(0, 216, 180),
-            0 0 150px rgb(0, 216, 180);
-    }
-
-    20%,
-    24%,
-    55% {
-        text-shadow: none;
-    }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 
 /* Styling li headings and adding neon glow with text shadow */
 h2 {
-    font-family: 'Bungee Hairline';
-    font-size: 4em !important;
-    font-weight: bold;
-    color: rgb(41, 0, 88);
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px rgb(31, 0, 102),
-        0 0 21px rgb(31, 0, 102),
-        0 0 42px rgb(31, 0, 102),
-        0 0 82px rgb(31, 0, 102),
-        0 0 92px rgb(104, 34, 83),
-        0 0 102px rgb(31, 0, 102),
-        0 0 151px rgb(31, 0, 102);
+  font-family: "Bungee Hairline";
+  font-size: 4em !important;
+  font-weight: bold;
+  color: rgb(41, 0, 88);
+  text-shadow: 0 0 7px #fff, 0 0 10px rgb(31, 0, 102), 0 0 21px rgb(31, 0, 102),
+    0 0 42px rgb(31, 0, 102), 0 0 82px rgb(31, 0, 102),
+    0 0 92px rgb(104, 34, 83), 0 0 102px rgb(31, 0, 102),
+    0 0 151px rgb(31, 0, 102);
 }
 
 /* Styling sub-headings */
 h3 {
-    font-family: 'Chathura';
-    font-size: 3em !important;
+  font-family: "Chathura";
+  font-size: 3em !important;
 }
 
 /* Note the z-index on both buttons and SVG, allows glow to fall over drop-down menu */
 button .btn {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 /* Remove inherited styling from Bootstrap elements - override with "!important"*/
 button.btn:focus {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* Generic styling for SVG icons to get them semi-uniform */
 svg {
-    fill: transparent;
-    stroke: rgba(255, 255, 255, 0.603) !important;
-    width: 15vw !important;
-    position: relative;
-    z-index: 2;
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.603) !important;
+  width: 15vw !important;
+  position: relative;
+  z-index: 2;
 }
 
 /* Styling for individual SVG - applying var in filter */
 svg#unicorn {
-    stroke: rgba(252, 249, 255, 0.849) !important;
-    stroke-width: 0.3rem !important;
-    opacity: 0.7;
-    width: 20vw !important;
-    color: rgb(49, 0, 88);
-    filter: var(--unicornGlow);
-    margin: 4.5em;
+  stroke: rgba(252, 249, 255, 0.849) !important;
+  stroke-width: 0.3rem !important;
+  opacity: 0.7;
+  width: 20vw !important;
+  color: rgb(49, 0, 88);
+  filter: var(--unicornGlow);
+  margin: 4.5em;
 }
 
 /* Applying flicker effect on hover animation */
 svg#unicorn:hover {
-    animation: unicornGlitch infinite 2s;
+  animation: unicornGlitch infinite 2s;
 }
 
 /* Creating flicker effect with keyframes for animation */
 @keyframes unicornGlitch {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    filter: var(--unicornHover);
+  }
 
-    0%,
-    18%,
-    22%,
-    25%,
-    53%,
-    57%,
-    100% {
-        filter: var(--unicornHover)
-    }
-
-    20%,
-    24%,
-    55% {
-        filter: none;
-    }
+  20%,
+  24%,
+  55% {
+    filter: none;
+  }
 }
 
 /* Styling for individual SVG - applying var in filter */
 svg#contactCld {
-    stroke: rgba(212, 254, 255, 0.76) !important;
-    stroke-width: 0.4rem !important;
-    filter: var(--cloudGlow);
+  stroke: rgba(212, 254, 255, 0.76) !important;
+  stroke-width: 0.4rem !important;
+  filter: var(--cloudGlow);
 }
 
 /* Applying flicker effect on hover animation */
 svg#contactCld:hover {
-    stroke: rgba(212, 254, 255, 0.76) !important;
-    stroke-width: 0.4rem !important;
-    animation: cloudGlitch infinite 1s;
+  stroke: rgba(212, 254, 255, 0.76) !important;
+  stroke-width: 0.4rem !important;
+  animation: cloudGlitch infinite 1s;
 }
 
 /* Creating flicker effect with keyframes for animation */
 @keyframes cloudGlitch {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    filter: var(--cloudHover);
+  }
 
-    0%,
-    18%,
-    22%,
-    25%,
-    53%,
-    57%,
-    100% {
-        filter: var(--cloudHover)
-    }
-
-    20%,
-    24%,
-    55% {
-        filter: none;
-    }
+  20%,
+  24%,
+  55% {
+    filter: none;
+  }
 }
 
 /* Styling for individual SVG - applying var in filter */
 svg#skillRnbow {
-    stroke-width: 0.35rem;
-    color: #fff;
-    filter: var(--rnbwGlow);
+  stroke-width: 0.35rem;
+  color: #fff;
+  filter: var(--rnbwGlow);
 }
 
 /* Applying flicker effect on hover animation */
 svg#skillRnbow:hover {
-    stroke-width: 0.35rem;
-    color: #fff;
-    animation: rnbowGlitch infinite 3s;
+  stroke-width: 0.35rem;
+  color: #fff;
+  animation: rnbowGlitch infinite 3s;
 }
 
 /* Creating flicker effect with keyframes for animation */
 @keyframes rnbowGlitch {
+  0%,
+  16%,
+  22%,
+  26%,
+  53%,
+  59%,
+  100% {
+    filter: var(--rnbwHover);
+  }
 
-    0%,
-    16%,
-    22%,
-    26%,
-    53%,
-    59%,
-    100% {
-        filter: var(--rnbwHover)
-    }
-
-    20%,
-    24%,
-    55% {
-        filter: none;
-    }
+  20%,
+  24%,
+  55% {
+    filter: none;
+  }
 }
 
 /* Styling for individual SVG - applying var in filter */
 svg#eduCherries {
-    stroke-width: 0.065rem;
-    color: #fff;
-    filter: var(--cherryGlow);
+  stroke-width: 0.065rem;
+  color: #fff;
+  filter: var(--cherryGlow);
 }
 
 /* Applying flicker effect on hover animation */
 svg#eduCherries:hover {
-    stroke-width: 0.065rem;
-    color: #fff;
-    animation: cherryGlitch infinite 2s;
+  stroke-width: 0.065rem;
+  color: #fff;
+  animation: cherryGlitch infinite 2s;
 }
 
 /* Creating flicker effect with keyframes for animation */
 @keyframes cherryGlitch {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    filter: var(--cherryHover);
+  }
 
-    0%,
-    18%,
-    22%,
-    25%,
-    53%,
-    57%,
-    100% {
-        filter: var(--cherryHover)
-    }
-
-    20%,
-    24%,
-    55% {
-        filter: none;
-    }
+  20%,
+  24%,
+  55% {
+    filter: none;
+  }
 }
 
 /* Styling for individual SVG - applying var in filter */
 svg#workClover {
-    stroke-width: 0.45rem;
-    color: #fff;
-    filter: var(--cloverGlow);
+  stroke-width: 0.45rem;
+  color: #fff;
+  filter: var(--cloverGlow);
 }
 
 /* Applying flicker effect on hover animation */
 svg#workClover:hover {
-    stroke-width: 0.45rem;
-    color: #fff;
-    animation: cloverGlitch infinite 2.5s;
+  stroke-width: 0.45rem;
+  color: #fff;
+  animation: cloverGlitch infinite 2.5s;
 }
 
 /* Creating flicker effect with keyframes for animation */
 @keyframes cloverGlitch {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    filter: var(--cloverHover);
+  }
 
-    0%,
-    18%,
-    22%,
-    25%,
-    53%,
-    57%,
-    100% {
-        filter: var(--cloverHover)
-    }
-
-    20%,
-    24%,
-    55%,
-    60% {
-        filter: none;
-    }
+  20%,
+  24%,
+  55%,
+  60% {
+    filter: none;
+  }
 }
 
 /* Styling for individual SVG - applying var in filter */
 svg#projLightning {
-    stroke-width: 0.35rem;
-    color: #fff;
-    filter: var(--lghtnGlow);
+  stroke-width: 0.35rem;
+  color: #fff;
+  filter: var(--lghtnGlow);
 }
 
 /* Applying flicker effect on hover animation */
 svg#projLightning:hover {
-    stroke-width: 0.35rem;
-    color: #fff;
-    animation: lghtnGlitch infinite 1.4s;
+  stroke-width: 0.35rem;
+  color: #fff;
+  animation: lghtnGlitch infinite 1.4s;
 }
 
 /* Creating flicker effect with keyframes for animation */
 @keyframes lghtnGlitch {
+  0%,
+  18%,
+  22%,
+  35%,
+  53%,
+  55%,
+  100% {
+    filter: var(--lghtnHover);
+  }
 
-    0%,
-    18%,
-    22%,
-    35%,
-    53%,
-    55%,
-    100% {
-        filter: var(--lghtnHover)
-    }
-
-    20%,
-    24%,
-    54% {
-        filter: none;
-    }
+  20%,
+  24%,
+  54% {
+    filter: none;
+  }
 }
 
 /* Styling for specific postioning and behavior of drop-down menu. Note the z-index for glow effect */
 .dropdown-menu.show {
-    min-width: 60vw;
-    max-width: 65vw;
-    min-height: 90%;
-    border: none;
-    z-index: 0;
-    margin-left: 10vw !important;
-    padding-left: 6rem !important;
-    padding-right: 4rem !important;
+  min-width: 60vw;
+  max-width: 65vw;
+  min-height: 90%;
+  border: none;
+  z-index: 0;
+  margin-left: 10vw !important;
+  padding-left: 6rem !important;
+  padding-right: 4rem !important;
 }
 
 /* Styling for specific postioning and behavior of drop-down menu */
 .dropdown-menu {
-    max-height: 680px;
-    overflow-y: auto;
+  max-height: 680px;
+  overflow-y: auto;
 }
 
 /* Styling li elements and personalizing their different states. */
 li {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* styling the card element*/
+.card-container {
+  padding: 1em;
+  display: inline-flex;
+  width: 50rem;
+}
+
+/* image div container */
+.img-container {
+  margin: 1em;
+  padding: 1em;
+  display: inline-flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 5em;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 5em;
+}
+
+img {
+  margin: 1em;
 }
 
 /* unvisited link */
 a:link {
-    color: midnightblue;
-    text-decoration: none;
+  color: midnightblue;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: rgb(255, 65, 230);
+  color: rgb(255, 65, 230);
 }
 
 /* mouse over link */
 #contactInfo a:hover {
-    color: rgb(170, 252, 255) !important;
-    filter: drop-shadow(0 0 1px rgb(200, 253, 255)) drop-shadow(0 0 3px rgb(255, 255, 255)) drop-shadow(0 0 8px #fff) drop-shadow(0 0 10px #00fafa) drop-shadow(0 0 13px #6af8fdd0) drop-shadow(0 0 18px #b6f0ff91) drop-shadow(0 0 22px #0098a391) drop-shadow(0 0 24px #b6faff91) drop-shadow(0 0 28px #016c7a91) !important;
+  color: rgb(170, 252, 255) !important;
+  filter: drop-shadow(0 0 1px rgb(200, 253, 255))
+    drop-shadow(0 0 3px rgb(255, 255, 255)) drop-shadow(0 0 8px #fff)
+    drop-shadow(0 0 10px #00fafa) drop-shadow(0 0 13px #6af8fdd0)
+    drop-shadow(0 0 18px #b6f0ff91) drop-shadow(0 0 22px #0098a391)
+    drop-shadow(0 0 24px #b6faff91) drop-shadow(0 0 28px #016c7a91) !important;
 }
 
 /* selected link */
 a:active {
-    color: rgb(166, 71, 255);
+  color: rgb(166, 71, 255);
 }
